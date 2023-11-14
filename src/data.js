@@ -1,12 +1,12 @@
 //  icons
 import {
-  FiYoutube,
-  FiInstagram,
+  // FiYoutube,
+  // FiInstagram,
   FiGithub,
-  FiDribbble,
+  FiLinkedin,
   FiLayout,
   FiSettings,
-  FiPenTool,
+  // FiPenTool,
   FiTag,
   FiMail,
   FiMapPin,
@@ -35,12 +35,12 @@ import SkillImg4 from './assets/img/skills/reactjs.png';
 import SkillImg5 from './assets/img/skills/nextjs.png';
 import SkillImg6 from './assets/img/skills/nodejs.png';
 import SkillImg7 from './assets/img/skills/git.png';
-import SkillImg8 from './assets/img/skills/figma.png';
+import SkillImg8 from './assets/img/skills/mongo.png';
+import SkillImg9 from './assets/img/skills/figma.png';
 
 // testimonial images
-import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
-import TestiImage2 from './assets/img/testimonials/testimonial-2.webp';
-import TestiImage3 from './assets/img/testimonials/testimonial-3.webp';
+import TestiImage1 from './assets/img/testimonials/frank.jpg';
+import TestiImage2 from './assets/img/testimonials/chimezie.jpg';
 
 // navigation
 export const navigation = [
@@ -73,20 +73,12 @@ export const navigation = [
 // social
 export const social = [
   {
-    icon: <FiYoutube />,
-    href: '',
-  },
-  {
-    icon: <FiInstagram />,
-    href: '',
+    icon: <FiLinkedin />,
+    href: 'https://linkedin.com/in/isaacanasonye',
   },
   {
     icon: <FiGithub />,
-    href: '',
-  },
-  {
-    icon: <FiDribbble />,
-    href: '',
+    href: 'https://github.com/isaacprogi',
   },
 ];
 
@@ -119,39 +111,73 @@ export const projectsData = [
   {
     id: '1',
     image: Project1,
-    name: 'project name 1',
-    category: 'UI/UX design',
+    name: 'Job Search ',
+    stack: 'React . typscript . tailwindcss',
+    category: 'Frontend',
+    href: 'https://job-filter.onrender.com'
+
   },
   {
     id: '2',
     image: Project2,
-    name: 'project name 2',
-    category: 'web development',
+    name: 'Employee Record',
+    stack: 'React tookit query . typscripyt . redux . tailwindcss . json-server',
+    category: 'Frontend',
+    href: 'https://github.com/Isaacprogi/employee-record-app-2'
+
   },
   {
     id: '3',
     image: Project3,
-    name: 'project name 3',
-    category: 'UI/UX design',
+    name: 'Movie Search',
+    stack: 'React . css',
+    category: 'Frontend',
+    href: 'https://Isaacprogi.github.io/movie-search'
+
   },
   {
     id: '4',
-    image: Project4,
-    name: 'project name 4',
-    category: 'branding',
+    image: Project6,
+    name: 'NotJustEvent',
+    stack: 'React . node . tailwindcss . mongodb . redux ...',
+    category: 'Fullstack',
+    href: 'https://notjustevent.com/'
   },
   {
     id: '5',
-    image: Project5,
-    name: 'project name 5',
-    category: 'web development',
+    image: Project4,
+    name: 'Report Generator',
+    stack: 'React . typscript . Node . Mongodb . tailwindcss,',
+    category: 'Fullstack',
+    href: 'https://report-generator-real-assist.onrender.com'
+
+
   },
   {
     id: '6',
-    image: Project6,
-    name: 'project name 6',
-    category: 'web development',
+    image: Project5,
+    name: 'Social Network(Linkdin clone)',
+    stack: 'React . node . tailwindcss . mongodb . socket.io . jwt',
+    category: 'Fullstack',
+    href: 'https://itslinkedinclone.onrender.com'
   },
+  {
+    id: '7',
+    image: Project4,
+    name: 'Linkedin Clone Api',
+    stack: 'Node . mongodb . socket.io . jwt',
+    category: 'Backend',
+    href: 'https://github.com/Isaacprogi/linkedin-clone-api'
+  },
+  {
+    id: '8',
+    image: Project6,
+    name: 'Flight Search Api',
+    stack: 'Node',
+    category: 'Backend',
+    href: 'https://github.com/Isaacprogi/flight-search-backend'
+  },
+
 ];
 
 // projects
@@ -160,13 +186,13 @@ export const projectsNav = [
     name: 'all',
   },
   {
-    name: 'UI/UX Design',
+    name: 'Frontend',
   },
   {
-    name: 'web development',
+    name: 'Fullstack',
   },
   {
-    name: 'branding',
+    name: 'Backend',
   },
 ];
 
@@ -174,27 +200,50 @@ export const projectsNav = [
 export const skills = [
   {
     image: SkillImg1,
+    name:'HTML',
+    href:'https://html.com/',
   },
   {
     image: SkillImg2,
+    name:'CSS',
+    href:'https://css3.com/',
+
   },
   {
     image: SkillImg3,
+    name:'JAVASCRIPT',
+    href:'https://www.javascript.com/'
   },
   {
     image: SkillImg4,
+    name:'REACT',
+    href:'https://react.dev/',
   },
   {
     image: SkillImg5,
+    name:'NEXT JS',
+    href:'https://nextjs.org/',
   },
   {
     image: SkillImg6,
+    name:'NODE JS',
+    href:'https://nodejs.org/en/',
   },
   {
     image: SkillImg7,
+    name:'GIT',
+    href:'https://github.com/',
   },
   {
     image: SkillImg8,
+    name:'MO-DB',
+    href:'https://www.mongodb.com/',
+  
+  },
+  {
+    image: SkillImg9,
+    name:'FIGMA',
+    href:'https://www.figma.com/',
   },
 ];
 
@@ -204,25 +253,19 @@ export const services = [
     icon: <FiLayout />,
     name: 'Web Design',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      'Crafting digital experiences that captivate and inspire. Elevate your brand with visually stunning and user-friendly designs.',
   },
   {
     icon: <FiSettings />,
     name: 'Web Development',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-  },
-  {
-    icon: <FiPenTool />,
-    name: 'Branding',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      'Transforming ideas into powerful, functional websites. From concept to code, we build custom solutions tailored to your unique needs.',
   },
   {
     icon: <FiTag />,
     name: 'SEO',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
+      'Boosting your online visibility and driving organic growth. Maximize your digital presence with strategic SEO to reach the right audience.',
   },
 ];
 
@@ -231,23 +274,16 @@ export const testimonials = [
   {
     authorImg: TestiImage1,
     authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'Olivia Doe',
-    authorPosition: 'Head of Design, Google',
+      'Isaac adapts quickly and improves rapidly',
+    authorName: 'Frank Ugwu',
+    authorPosition: 'Team head, NotJustEvent Inc',
   },
   {
     authorImg: TestiImage2,
     authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'Olivia Doe',
-    authorPosition: 'Head of Design, Google',
-  },
-  {
-    authorImg: TestiImage3,
-    authorText:
-      'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-    authorName: 'Olivia Doe',
-    authorPosition: 'Head of Design, Google',
+      'Love the simplicity of the service and the prompt response. We can’t imagine working without it.',
+    authorName: 'Chimezie',
+    authorPosition: 'Frontend Team lead, NotJustEvent Inc',
   },
 ];
 
@@ -256,13 +292,13 @@ export const contact = [
   {
     icon: <FiMail />,
     title: 'Have a question?',
-    subtitle: 'I am here to help you.',
-    description: 'Email me at hello@youremail.com',
+    subtitle: "I'm available😊",
+    description: 'Email at isaaconyes80@gmail.com',
   },
   {
     icon: <FiMapPin />,
     title: 'Current Location',
-    subtitle: 'Bucharest, Romania',
+    subtitle: 'Nigeria, Enugu',
     description: 'Serving clients worldwide',
   },
 ];
