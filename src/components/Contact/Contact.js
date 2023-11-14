@@ -39,7 +39,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true)
     try {
-      const {data} = await axios.post(`https://isaacanasonye.onrender.com/api/contact`, formData)
+      const {data} = await axios.post(`https://isaacanasonye-api.onrender.com/api/contact`, formData)
       setLoading(false)
       showToast(data?.message, "SUCCESS");
       setFormData({
