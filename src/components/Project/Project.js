@@ -5,11 +5,11 @@ const Project = ({ item }) => {
     <div key={item.id} className='flex flex-col group items-center text-center'>
       
       <div className='mb-8 hover:opacity-[.8] relative duration-300 cursor-pointer'>
-      <a
+      {/* <a
         href={item.href}
         className='text-center opacity-[0] text-accent z-[300] group-hover:opacity-[1] flex  items-center cursor-pointer justify-center text-lg font-[700] absolute w-full h-full bg-black transition-opacity duration-300'>
         🤗
-      </a>
+      </a> */}
         <img src={item.image} alt='' />
       </div>
       <p className='capitalize text-accent font-[600] text-sm mb-3'>{item.category}</p>

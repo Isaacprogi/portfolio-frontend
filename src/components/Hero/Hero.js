@@ -16,8 +16,7 @@ const Hero = () => {
           <div className='flex-1  flex flex-col items-center lg:items-start'>
             <p className='text-lg text-accent '>Hello ☺,</p>
             <p className='mb-[22px]'>I'm Isaac</p>
-            <h1 className='text-4xl leading-[44px]
-                       md:text-5xl md:leading-tight lg:text-7xl md:leading-[1,2] font-bold md:tracking-[-2px]
+            <h1 className='text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl md:leading-[1,2] font-bold md:tracking-[-2px]
                         '>I Build & Design <br />Web Interface</h1>
             <p className='pt-4 pb-8 mb:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left'>
               Experienced Developer with a proven track record of delivering high-quality web applications. With 5
@@ -33,7 +32,7 @@ const Hero = () => {
           {/* right side */}
           <div className='hidden lg:flex  flex-1 justify-center items-center h-full'>
             <div className='w-[15rem] h-[15rem] overflow-hidden rounded-full '>
-              <img className='h-full w-full' src={Isaac} alt='isaac' />
+              <img className='h-full w-full object-cover' src={Isaac} alt='isaac' />
             </div>
           </div>
         </div>

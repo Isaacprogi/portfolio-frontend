@@ -41,6 +41,7 @@ import SkillImg9 from './assets/img/skills/figma.png';
 // testimonial images
 import TestiImage1 from './assets/img/testimonials/frank.jpg';
 import TestiImage2 from './assets/img/testimonials/chimezie.jpg';
+import TestiImage3 from './assets/img/testimonials/okan.png';
 
 // navigation
 export const navigation = [
@@ -111,17 +112,17 @@ export const projectsData = [
   {
     id: '1',
     image: Project1,
-    name: 'Job Search ',
+    name: 'Buy true',
     stack: 'React . typscript . tailwindcss',
     category: 'Frontend',
-    href: 'https://job-filter.onrender.com'
+    href: 'https://buy-true.vercel.app/'
 
   },
   {
     id: '2',
     image: Project2,
-    name: 'Employee Record',
-    stack: 'React tookit query . typscripyt . redux . tailwindcss . json-server',
+    name: 'Zwilt',
+    stack: 'React . typscripyt . tailwindcss ',
     category: 'Frontend',
     href: 'https://github.com/Isaacprogi/employee-record-app-2'
 
@@ -129,10 +130,10 @@ export const projectsData = [
   {
     id: '3',
     image: Project3,
-    name: 'Movie Search',
-    stack: 'React . css',
+    name: 'Clarifon',
+    stack: 'React . tailwindcss',
     category: 'Frontend',
-    href: 'https://Isaacprogi.github.io/movie-search'
+    href: 'https://clarifon.onrender.com'
 
   },
   {
@@ -146,10 +147,10 @@ export const projectsData = [
   {
     id: '5',
     image: Project4,
-    name: 'Report Generator',
-    stack: 'React . typscript . Node . Mongodb . tailwindcss,',
+    name: 'Substrately',
+    stack: 'Mern stack',
     category: 'Fullstack',
-    href: 'https://report-generator-real-assist.onrender.com'
+    href: 'https://substrately.com'
 
 
   },
@@ -271,6 +272,13 @@ export const services = [
 
 // testimonials
 export const testimonials = [
+  {
+    authorImg: TestiImage3,
+    authorText:
+      'Isaac is trustworthy',
+    authorName: 'Oan Kan Meral',
+    authorPosition: 'CEO, Toedur',
+  },
   {
     authorImg: TestiImage1,
     authorText:
