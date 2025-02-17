@@ -111,33 +111,6 @@ export const brands = [
 export const projectsData = [
   {
     id: '1',
-    image: Project1,
-    name: 'Buy true',
-    stack: 'React . typscript . tailwindcss',
-    category: 'Frontend',
-    href: 'https://buy-true.vercel.app/'
-
-  },
-  {
-    id: '2',
-    image: Project2,
-    name: 'Zwilt',
-    stack: 'React . typscripyt . tailwindcss ',
-    category: 'Frontend',
-    href: 'https://github.com/Isaacprogi/employee-record-app-2'
-
-  },
-  {
-    id: '3',
-    image: Project3,
-    name: 'Clarifon',
-    stack: 'React . tailwindcss',
-    category: 'Frontend',
-    href: 'https://clarifon.onrender.com'
-
-  },
-  {
-    id: '4',
     image: Project6,
     name: 'NotJustEvent',
     stack: 'React . node . tailwindcss . mongodb . redux ...',
@@ -145,7 +118,7 @@ export const projectsData = [
     href: 'https://notjustevent.com/'
   },
   {
-    id: '5',
+    id: '2',
     image: Project4,
     name: 'Substrately',
     stack: 'Mern stack',
@@ -155,12 +128,39 @@ export const projectsData = [
 
   },
   {
-    id: '6',
+    id: '3',
     image: Project5,
-    name: 'Social Network(Linkdin clone)',
-    stack: 'React . node . tailwindcss . mongodb . socket.io . jwt',
+    name: 'Toedur',
+    stack: 'React . Nextjs . tailwindcss',
     category: 'Fullstack',
-    href: 'https://itslinkedinclone.onrender.com'
+    href: 'https://toedur.com'
+  },
+  {
+    id: '4',
+    image: Project1,
+    name: 'Buy true',
+    stack: 'React . typscript . tailwindcss',
+    category: 'Frontend',
+    href: 'https://buy-true.vercel.app/'
+
+  },
+  {
+    id: '5',
+    image: Project2,
+    name: 'Zwilt',
+    stack: 'React . typscripyt . tailwindcss ',
+    category: 'Frontend',
+    href: 'https://zwilt-theta.vercel.app/'
+
+  },
+  {
+    id: '6',
+    image: Project3,
+    name: 'Clarifon Product Frontend Design',
+    stack: 'React . tailwindcss',
+    category: 'Frontend',
+    href: 'https://clarifon.onrender.com'
+
   },
   {
     id: '7',

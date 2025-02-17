@@ -36,7 +36,7 @@ const Projects = () => {
   return (
     <div>
         {/* nav */}
-    <nav className='mb-12 max-w-xl mx-auto'>
+    {/* <nav className='mb-12 max-w-xl mx-auto'>
     <ul className='flex flex-col md:flex-row text-white justify-evenly items-center'>
         {
             projectsNav.map((item,index)=>{
@@ -48,7 +48,7 @@ const Projects = () => {
             })    
         }
     </ul>
-    </nav>
+    </nav> */}
     {/* projects grid */}
 
     <section className='grid lg:grid-cols-3  gap-y-12 lg:gap-x-8 lg:gap-y-8'>
