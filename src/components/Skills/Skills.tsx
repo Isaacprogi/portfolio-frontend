@@ -3,27 +3,25 @@ export const Skills: React.FC = () => {
     Frontend: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js', 'HTML5', 'CSS3', 'JavaScript'],
     Backend: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'REST APIs', 'GraphQL'],
     Tools: ['Git', 'Docker', 'AWS', 'Figma', 'VS Code', 'Webpack', 'Vite'],
-    Design: [ 'Responsive Design', 'Accessibility', 'Design Systems']
+    Design: ['Responsive Design', 'Accessibility', 'Design Systems'],
   };
 
   return (
-    <section className="py-20 px-4 bg-blue-900 dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-white  dark:text-white mb-12 text-center">
-          Skills & Technologies
+    <section className="py-16 px-4 bg-white dark:bg-black text-black dark:text-white font-sans transition-colors duration-300">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-display md:text-6xl font-bold text-center mb-10">
+          🛠️ Skills & Technologies
         </h2>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div className="grid md:grid-cols-2 gap-6">
           {Object.entries(skillCategories).map(([category, skills]) => (
-            <div key={category} className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-sm">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                {category}
-              </h3>
+            <div key={category} className=" rounded-xl p-5 border border-gray-200 dark:bg-gray-900 dark:border-gray-700/40">
+              <h3 className="text-xl font-semibold mb-3">{category}</h3>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium"
+                    className="bg-[#e7e7e7] border border-gray-800 dark:bg-gray-800/40 text-sm text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full"
                   >
                     {skill}
                   </span>

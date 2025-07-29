@@ -21,16 +21,16 @@ const ApplyTheme = () => {
 
 // Layout wrapper for pages with navbar/footer
 const Layout = ({ children }: { children: React.ReactNode }) => (
-  <div className="min-h-screen bg-white dark:bg-black w-full transition-colors duration-300 flex flex-col">
+  <div className="h-screen overflow-y-auto bg-white dark:bg-black w-full transition-colors duration-300 flex flex-col">
     <Navbar />
-    <main className="w-full flex-grow">{children}</main>
+    <main className="w-full">{children}</main>
     <Footer />
   </div>
 );
 
 function App() {
   return (
-    <div className="w-full h-screen">
+    <>
       <ApplyTheme />
       <Routes>
         {/* Routes that use layout */}
@@ -54,7 +54,7 @@ function App() {
         {/* NotFound route without layout */}
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

@@ -56,7 +56,7 @@ import Solomate from '../assets/solemate.png'
     },
     {
       id: 5,
-      title: 'Solomate',
+      title: 'Solemate',
       description: 'A social platform for food enthusiasts to share and discover new recipes.',
       techStack: ['React', 'Tailwind CSS', 'Typescript'],
       image:Solomate,

@@ -1,12 +1,12 @@
-import { Heart, Code, Coffee, Github, Twitter, Mail, ExternalLink } from 'lucide-react';
+import { Heart, Code, Coffee, Github, Twitter, Mail} from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900/20 border-t border-gray-200/50 dark:border-gray-700/50 mt-16">
+    <footer className=" dark:bg-black border-t border-gray-200/50 dark:border-gray-700/50">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-6  py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="md:col-span-2">
@@ -77,9 +77,9 @@ export const Footer: React.FC = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-200/50 dark:border-gray-700/50 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
+      <div className=" bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex flex-col sm:flex-row items-center justify-between text-sm">
+          <div className="flex flex-col sm:flex-row items-center justify-center text-sm">
             <div className="flex items-center space-x-4 mb-3 sm:mb-0">
               <p className="text-gray-600 dark:text-gray-400">
                 © {currentYear} Isaac. All rights reserved.
@@ -95,20 +95,6 @@ export const Footer: React.FC = () => {
                 <span className="px-2 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 rounded-full">
                   Tailwind
                 </span>
-              </div>
-            </div>
-            
-            <div className="flex items-center space-x-4 text-xs text-gray-500 dark:text-gray-400">
-              <a href="/privacy" className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
-                Privacy
-              </a>
-              <a href="/terms" className="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
-                Terms
-              </a>
-              <div className="flex items-center space-x-1">
-                <span>Status:</span>
-                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-green-600 dark:text-green-400">All systems operational</span>
               </div>
             </div>
           </div>

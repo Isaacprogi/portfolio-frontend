@@ -6,7 +6,11 @@ export default {
   ],
   darkMode: 'class',// 👈 Required for class-based dark mode
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+  cartoon: ['Fredoka', 'cursive'],
+}
+    },
   },
   plugins: [],
 }
