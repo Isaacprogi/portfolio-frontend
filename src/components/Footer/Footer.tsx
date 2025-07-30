@@ -1,7 +1,19 @@
 import { Heart, Code, Coffee, Github, Twitter, Mail} from 'lucide-react';
+import { handleScrollToItem } from '../../lib/utils';
+import { useNavigate } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const navigate = useNavigate()
+
+
+  const handleLinkClick = (link:any) => {
+    if(link.name.toLocaleLowerCase() === "blog"){
+      navigate("/article")
+      return
+    }
+    handleScrollToItem(link.name.toLocaleLowerCase())
+  }
 
   return (
     <footer className=" dark:bg-black border-t border-gray-200/50 dark:border-gray-700/50">
@@ -38,15 +50,16 @@ export const Footer: React.FC = () => {
                 { name: 'About', href: '/about' },
                 { name: 'Projects', href: '/projects' },
                 { name: 'Blog', href: '/blog' },
+                { name: 'Skills', href: '/skills' },
                 { name: 'Contact', href: '/contact' }
               ].map((link) => (
-                <a
+                <div
                   key={link.name}
-                  href={link.href}
-                  className="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                  onClick={()=>handleLinkClick(link)}
+                  className="block cursor-pointer text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                 >
                   {link.name}
-                </a>
+                </div>
               ))}
             </div>
           </div>
@@ -58,7 +71,7 @@ export const Footer: React.FC = () => {
               {[
                 { icon: Github, href: 'https://github.com/yourusername', label: 'GitHub' },
                 { icon: Twitter, href: 'https://twitter.com/yourusername', label: 'Twitter' },
-                { icon: Mail, href: 'mailto:your.email@example.com', label: 'Email' }
+                { icon: Mail, href: 'mailto:isaaconyes80@gmail.com', label: 'Email' }
               ].map((social) => (
                 <a
                   key={social.label}

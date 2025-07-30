@@ -1,24 +1,17 @@
 import { ExternalLink, Download, Mail } from "lucide-react";
 import Me from "../../assets/isaac.jpg";
-
+import { handleScrollToItem } from "../../lib/utils";
+import { ParticlesBackground } from "../ParticlesBackground/ParticlesBackground";
+import { Moon } from "lucide-react";
 export const Hero: React.FC = () => {
-  const handleScrollToProjects = () => {
-    const projectsSection = document.getElementById("projects");
-    if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleScrollToContact = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+ 
 
   return (
-    <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-white dark:bg-black px-4">
-      <div className="max-w-4xl w-full mx-auto flex flex-col md:flex-row items-center gap-10">
+    <section className="min-h-[calc(100vh-4rem)] relative flex flex-col items-center justify-center bg-white dark:bg-black px-4">
+      <div className="absolute">
+        <ParticlesBackground/>
+      </div>
+      <div className="max-w-4xl shadow-md dark:shadow-gray-700/30 w-full border dark:border-gray-800/80 p-3 rounded-md mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Content */}
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl font-display md:text-6xl font-bold text-gray-900 dark:text-white mb-4">
@@ -35,7 +28,7 @@ export const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center md:justify-start">
             <button
-              onClick={handleScrollToProjects}
+              onClick={()=>handleScrollToItem("projects")}
               className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium flex items-center gap-2 transition"
             >
               View Projects
@@ -48,12 +41,12 @@ export const Hero: React.FC = () => {
               rel="noopener noreferrer"
               className="border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 px-6 py-2 rounded-full font-medium flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             >
-              Download Resume
+              Resume
               <Download className="w-4 h-4" />
             </a>
 
             <button
-              onClick={handleScrollToContact}
+              onClick={()=>handleScrollToItem("contact")}
               className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-medium flex items-center gap-2 transition"
             >
               Hire Me

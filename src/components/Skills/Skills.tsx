@@ -7,7 +7,7 @@ export const Skills: React.FC = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-white dark:bg-black text-black dark:text-white font-sans transition-colors duration-300">
+    <section id="skills" className="py-16 px-4 bg-white dark:bg-black text-black dark:text-white font-sans transition-colors duration-300">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-display md:text-6xl font-bold text-center mb-10">
           🛠️ Skills & Technologies

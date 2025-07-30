@@ -1,7 +1,7 @@
 import { Mail,Linkedin,Github } from "lucide-react";
 export const Contact: React.FC = () => {
   return (
-    <section className="py-20 px-4 bg-gray-50 dark:bg-black">
+    <section id="contact" className="py-20 px-4 bg-gray-50 dark:bg-black">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-display md:text-6xl font-bold text-gray-900 dark:text-white mb-12 text-center">
           Let's Work Together
