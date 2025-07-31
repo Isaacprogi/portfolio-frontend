@@ -1,8 +1,9 @@
 import type { BlogPost } from "../../lib/types";
 import { BlogCard } from "../../components/BlogCard/BlogCard";
+import NoArticle from '../../assets/no-article.png'
 
 export const BlogPage: React.FC = () => {
-  const blogPosts: BlogPost[] = []; // ← No blogs yet
+  const blogPosts: BlogPost[] = []; 
 
   return (
     <div className="min-h-screen pt-24 pb-16 px-4">
@@ -19,9 +20,9 @@ export const BlogPage: React.FC = () => {
         {blogPosts.length === 0 ? (
           <div className="flex flex-col items-center justify-center text-center py-20 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-inner">
             <img
-              src="https://undraw.io/illustrations/undraw_blog_post_re_fy5x.svg"
+              src={NoArticle}
               alt="Coming soon"
-              className="w-60 h-auto mb-6"
+              className="w-60 rounded-md h-auto mb-6"
             />
             <h2 className="text-3xl font-semibold text-gray-700 dark:text-gray-200 mb-2">
               No blogs yet

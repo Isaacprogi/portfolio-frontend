@@ -1,78 +1,114 @@
-import { Mail,Linkedin,Github } from "lucide-react";
+import { Mail, Linkedin, Github } from "lucide-react";
+
 export const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-20 px-4 bg-gray-50 dark:bg-black">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-display md:text-6xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-          Let's Work Together
+    <section
+      id="contact"
+      className="py-24 px-4 bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-900"
+    >
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-4xl font-display md:text-6xl font-bold text-center text-gray-900 dark:text-white mb-16">
+          Let’s Work Together
         </h2>
-        
-        <div className="grid md:grid-cols-2 gap-12">
+
+        <div className="grid md:grid-cols-2 gap-14">
+          {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+            <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
               Get In Touch
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-8">
-              I'm always open to discussing new opportunities, collaborations, or just having 
-              a chat about technology and design. Feel free to reach out!
+            <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+              I’m always open to new opportunities, collaborations, or just chatting
+              about technology and design. Feel free to say hi!
             </p>
-            
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <Mail className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                -
-                <span className="text-gray-700 dark:text-gray-300">isaaconyes80@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <Linkedin className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                -
-                <span className="text-gray-700 dark:text-gray-300">linkedin.com/in/isaacanasonye</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <Github className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                -
-                <span className="text-gray-700 dark:text-gray-300">github.com/isaacprogi</span>
-              </div>
+
+            <div className="space-y-5">
+              {[
+                {
+                  icon: Mail,
+                  label: "Email",
+                  href: "mailto:isaaconyes80@gmail.com",
+                  text: "isaaconyes80@gmail.com",
+                },
+                {
+                  icon: Linkedin,
+                  label: "LinkedIn",
+                  href: "https://linkedin.com/in/isaacanasonye",
+                  text: "linkedin.com/in/isaacanasonye",
+                },
+                {
+                  icon: Github,
+                  label: "GitHub",
+                  href: "https://github.com/isaacprogi",
+                  text: "github.com/isaacprogi",
+                },
+              ].map(({ icon: Icon, label, href, text }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 group transition-all hover:text-blue-600 dark:hover:text-blue-400"
+                >
+                  <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
+                  <span className="text-gray-700 dark:text-gray-300 group-hover:underline">
+                    {text}
+                  </span>
+                </a>
+              ))}
             </div>
           </div>
-          
-          <form className="space-y-4">
+
+          {/* Contact Form */}
+          <form className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg p-8 space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+              >
                 Name
               </label>
               <input
                 type="text"
                 id="name"
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-800/40 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 placeholder="Your name"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition"
               />
             </div>
+
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+              >
                 Email
               </label>
               <input
                 type="email"
                 id="email"
-                className="w-full px-4 py-3 rounded-lg border border-gray-200  dark:border-gray-800/40 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="your@email.com"
+                placeholder="you@example.com"
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition"
               />
             </div>
+
             <div>
-              <label htmlFor="message" className="block text-sm  font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+              >
                 Message
               </label>
               <textarea
                 id="message"
                 rows={4}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-800/40 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 placeholder="Your message..."
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition"
               />
             </div>
+
             <button
               type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
             >
               Send Message
             </button>

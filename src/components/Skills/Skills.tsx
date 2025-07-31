@@ -7,21 +7,29 @@ export const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="py-16 px-4 bg-white dark:bg-black text-black dark:text-white font-sans transition-colors duration-300">
-      <div className="max-w-4xl mx-auto">
+    <section
+      id="skills"
+      className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white dark:from-black dark:to-gray-900 text-black dark:text-white transition-colors duration-300"
+    >
+      <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-display md:text-6xl font-bold text-center mb-10">
           🛠️ Skills & Technologies
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-10">
           {Object.entries(skillCategories).map(([category, skills]) => (
-            <div key={category} className=" rounded-xl p-5 border border-gray-200 dark:bg-gray-900 dark:border-gray-700/40">
-              <h3 className="text-xl font-semibold mb-3">{category}</h3>
-              <div className="flex flex-wrap gap-2">
+            <div
+              key={category}
+              className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700/50 rounded-2xl p-6 shadow-md dark:shadow-none hover:shadow-xl transition-all"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                {category}
+              </h3>
+              <div className="flex flex-wrap gap-3">
                 {skills.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-[#e7e7e7] border border-gray-800 dark:bg-gray-800/40 text-sm text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full"
+                    className="inline-block text-sm font-medium px-4 py-1.5 rounded-full bg-gray-100 text-gray-800 dark:bg-gray-800/50 dark:text-gray-200 border border-gray-300 dark:border-gray-700 hover:bg-blue-100 dark:hover:bg-blue-900/30 transition"
                   >
                     {skill}
                   </span>
