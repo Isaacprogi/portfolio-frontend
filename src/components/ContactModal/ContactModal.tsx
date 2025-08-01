@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, ClipboardCheck, Clipboard } from "lucide-react";
+import { ClipboardCheck, Clipboard } from "lucide-react";
 
 interface ContactModalProps {
   isOpen: boolean;

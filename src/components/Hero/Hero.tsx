@@ -2,14 +2,15 @@ import { ExternalLink, Download, Mail } from "lucide-react";
 import Me from "../../assets/isaac.jpg";
 import { handleScrollToItem } from "../../lib/utils";
 import { ParticlesBackground } from "../ParticlesBackground/ParticlesBackground";
-import { Moon } from "lucide-react";
 export const Hero: React.FC = () => {
  
 
   return (
     <section className="min-h-[calc(100vh-4rem)] relative flex flex-col items-center justify-center bg-white dark:bg-black px-4">
       <div className="absolute">
-        <ParticlesBackground/>
+        <div className="z-[50]">
+          <ParticlesBackground/>
+        </div>
       </div>
       <div className="max-w-4xl shadow-md dark:shadow-gray-700/30 w-full border dark:border-gray-800/80 p-3 rounded-md mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Text Content */}
@@ -26,7 +27,7 @@ export const Hero: React.FC = () => {
             Every product starts with curiosity. I craft intuitive, scalable web experiences—frontend to backend—that feel as good as they work.
           </p>
 
-          <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center md:justify-start">
+          <div className="flex flex-col z-[100] sm:flex-row flex-wrap gap-3 justify-center md:justify-start">
             <button
               onClick={()=>handleScrollToItem("projects")}
               className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium flex items-center gap-2 transition"

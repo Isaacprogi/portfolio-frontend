@@ -3,7 +3,6 @@ import {
   Code,
   Coffee,
   Github,
-  Twitter,
   Mail,
   Linkedin,
 } from 'lucide-react';
