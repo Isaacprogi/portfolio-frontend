@@ -5,6 +5,8 @@ import Staicy from '../assets/uat.png'
 import Sketchy from '../assets/sketchy.png'
 import Rvin from '../assets/rvin.png'
 import Solomate from '../assets/solemate.png'
+import BleemHire from '../assets/bleem.png'
+import P2p from '../assets/p2p.png'
 
   export const projects: Project[] = [
     // Company Projects
@@ -50,7 +52,7 @@ import Solomate from '../assets/solemate.png'
       techStack: ['React', 'TypeScript', 'Tailwind css', 'canva'],
       image: Sketchy,
       liveUrl: 'https://sketchy-sable.vercel.app/',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/Isaacprogi/sketchy',
       category: 'Mobile',
       type: 'personal'
     },
@@ -61,7 +63,7 @@ import Solomate from '../assets/solemate.png'
       techStack: ['React', 'Tailwind CSS', 'Typescript'],
       image:Solomate,
       liveUrl: 'https://solemate-sable.vercel.app/',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/Isaacprogi/Solemate',
       category: 'Full Stack',
       type: 'personal'
     },
@@ -75,5 +77,28 @@ import Solomate from '../assets/solemate.png'
       githubUrl: '#',
       category: 'Web App',
       type: 'personal'
-    }
+    },
+    {
+      id: 7,
+      title: 'Bleemhire',
+      description: 'A modern job platform designed to connect professionals with verified visa sponsorship and remote work opportunities worldwide.',
+      techStack: ['React', 'TypeScript', 'supabase','lovable ai',"tailwindcss"
+      ],
+      image: BleemHire,
+      liveUrl: 'https://www.bleemhire.com',
+      githubUrl: '#',
+      category: 'Web App',
+      type: 'company'
+    },
+    {
+      id: 8,
+      title: 'P2P Africa',
+      description: 'A clean, user-friendly peer-to-peer (P2P) event platform design that simplifies event creation, discovery, and participation.',
+      techStack: ['React', 'TypeScript',"tailwindcss"],
+      image: P2p,
+      liveUrl: 'https://p2-p-africa.vercel.app/',
+      githubUrl: 'https://github.com/Isaacprogi/P2P-Africa',
+      category: 'Web App',
+      type: 'personal'
+    },
   ];

@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer/Footer";
 import { useTheme } from "./context/ThemeContext";
 import { useEffect } from "react";
 
+
 // Component to apply dark class to <html>
 const ApplyTheme = () => {
   const { isDark } = useTheme();

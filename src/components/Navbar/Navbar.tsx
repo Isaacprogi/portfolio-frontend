@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="sticky top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 text-sm">
+      <nav className="sticky top-0 mb-[2rem] sm:mb-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 text-sm">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-center h-12">
             {/* Left: Theme Toggle and Icons */}
